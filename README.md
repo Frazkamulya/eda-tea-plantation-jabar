@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📊 Exploratory Data Analysis: Luas Tanaman Teh Jawa Barat (2013–2024)
 
 Project ini bertujuan untuk melakukan Exploratory Data Analysis (EDA) terhadap dataset komoditas tanaman tahunan *teh* di Provinsi Jawa Barat.  
@@ -46,3 +47,6 @@ File CSV dapat ditemukan pada folder **/data**.
 ---
 
 
+=======
+# eda-tea-plantation-jabar
+>>>>>>> fc5aa2f142df9d42541265077716c6406e39cc9f
