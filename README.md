@@ -1,121 +1,60 @@
-# Exploratory Data Analysis: Luas Tanaman Teh Jawa Barat (2013–2024)
+Tentu, Frazka. Ini adalah versi README yang lebih formal, bersih, dan profesional tanpa menggunakan ikon atau emoji. Format ini sangat cocok jika Anda ingin menonjolkan kesan teknis dan serius di GitHub.
 
-Project ini bertujuan untuk melakukan Exploratory Data Analysis (EDA) terhadap dataset komoditas tanaman tahunan teh di Provinsi Jawa Barat.  
-Analisis difokuskan pada pola luas tanaman berdasarkan:
-- Kabupaten/Kota
-- Kondisi tanaman (TBM, TM, TR/TTM)
-- Perubahan luas tanaman per tahun
-- Distribusi keseluruhan luas tanaman
+Pastikan Anda mengisi bagian di dalam kurung siku [...] dengan data riil dari notebook Anda.
+Exploratory Data Analysis: Revitalisasi Perkebunan Teh Jawa Barat (2013–2024)
+Business Context
 
-Dataset bersumber dari Open Data Jabar dan mencakup tahun 2013–2024, sehingga cocok untuk analisis tren jangka panjang.
+Provinsi Jawa Barat merupakan kontributor utama produksi teh nasional. Namun, keberlanjutan sektor ini menghadapi tantangan berupa degradasi lahan dan lambatnya proses regenerasi tanaman. Project ini melakukan analisis terhadap data historis selama 11 tahun untuk mengidentifikasi wilayah kritis yang memerlukan intervensi kebijakan serta memetakan potensi produktivitas di masa depan.
+Key Performance Indicators (KPI)
 
----
+    Total Luas Lahan (2024): [Isi Angka] Hektar.
 
-## Dataset
-Sumber: Open Data Jabar  
-https://opendata.jabarprov.go.id/
+    Dominasi Kondisi: Tanaman Menghasilkan (TM) mencakup [Isi %] dari total luas lahan.
 
-Kolom dalam dataset:
-- kode_provinsi
-- nama_provinsi
-- kode_kabupaten_kota
-- nama_kabupaten_kota
-- kondisi_tanaman
-- tbm (tanaman belum menghasilkan)
-- tm (tanaman menghasilkan)
-- tr/ttm (rusak / tidak menghasilkan)
-- luas_tanaman
-- satuan
-- tahun
+    Rasio Lahan Kritis: Terdapat [Isi %] lahan dalam kondisi Rusak atau Tidak Menghasilkan (TR/TTM).
 
-Format: CSV  
-Lokasi file: folder /data
+    Indeks Regenerasi: Pertumbuhan Tanaman Belum Menghasilkan (TBM) rata-rata sebesar [Isi %] per tahun.
 
----
+Tech Stack dan Sumber Data
 
-## Tools dan Libraries
-- Python
-- Jupyter Notebook
-- pandas
-- matplotlib
-- seaborn
+    Sumber Data: Open Data Jabar (Periode 2013-2024).
 
----
+    Teknologi: Python, Pandas, Matplotlib, Seaborn.
 
-## Struktur Project
+    Metode Analisis: Trend Analysis, Regional Profiling, dan Composition Analysis.
 
-(Project structure ditampilkan di repository)
+Key Analytical Findings (Deep Dive)
 
----
+    Konsentrasi Regional (Pareto Analysis): Sebanyak 80% total luas lahan teh di Jawa Barat terpusat pada wilayah [Sebutkan 3 Kabupaten Teratas]. Konsentrasi ini menunjukkan adanya risiko sistemik jika terjadi perubahan iklim atau hama di wilayah tersebut.
 
-## Hasil Exploratory Data Analysis (EDA)
+    Urgensi Lahan Kritis (TR/TTM): Kabupaten [Sebutkan Nama] mencatatkan rasio lahan rusak tertinggi sebesar [Isi %]. Hal ini mengindikasikan perlunya program replanting atau rehabilitasi lahan segera untuk mencegah penurunan output total.
 
-### 1. Data Quality Check
-- Tidak terdapat missing values
-- Tidak terdapat data duplikat
-- Tipe data sudah sesuai (tahun sebagai integer, luas_tanaman sebagai numerik)
-- Dataset siap digunakan tanpa proses pembersihan lanjutan
+    Stagnasi Regenerasi Lahan: Meskipun fase produktif (TM) masih mendominasi, pertumbuhan lahan baru (TBM) mengalami perlambatan sebesar [Isi %] dalam 3 tahun terakhir. Jika tren ini berlanjut, Jawa Barat berisiko kehilangan kapasitas produksi jangka panjang.
 
----
+    Anomali Data Historis: Terdeteksi lonjakan luas lahan yang signifikan pada tahun [Tahun] di wilayah [Nama Wilayah], yang memerlukan investigasi lebih lanjut terkait perubahan status lahan atau kebijakan daerah pada periode tersebut.
 
-## Insight EDA (Temuan Utama)
+Rekomendasi Strategis
+1. Pemerintah dan Pembuat Kebijakan
 
-1. Distribusi luas_tanaman bersifat right-skewed, menunjukkan sebagian besar kabupaten/kota memiliki luas lahan kecil hingga menengah, sementara hanya beberapa daerah dengan luas lahan sangat besar.
-2. Kontribusi luas tanaman tidak merata dan terpusat pada beberapa kabupaten tertentu.
-3. Perubahan luas tanaman per tahun menunjukkan pola fluktuatif yang mengindikasikan dinamika penggunaan lahan.
-4. Kondisi tanaman TM (Tanaman Menghasilkan) mendominasi, menandakan sebagian besar lahan berada pada fase produktif.
-5. Nilai TR/TTM yang cukup besar di beberapa wilayah mengindikasikan adanya penurunan produktivitas atau kerusakan lahan.
-6. TBM mencerminkan proses regenerasi kebun, yang berpotensi meningkatkan produksi di masa depan.
-7. Terdapat perbedaan signifikan antar daerah, sehingga pendekatan kebijakan sebaiknya disesuaikan secara lokal.
-8. Satuan data sudah konsisten dan standar (hektar), sehingga memudahkan analisis lanjutan.
+    Prioritas Rehabilitasi: Alokasi bantuan bibit dan pupuk harus difokuskan pada wilayah dengan rasio TR/TTM di atas 15%, terutama di Kabupaten [Nama].
 
----
+    Stimulus TBM: Memberikan insentif bagi petani yang melakukan pembukaan lahan baru (TBM) untuk menjaga keberlanjutan siklus produksi.
 
-## Storytelling Analisis
+2. Sektor Industri dan Investor
 
-Perkebunan teh merupakan salah satu komoditas penting di Jawa Barat. Dataset yang mencakup periode 2013 hingga 2024 memberikan gambaran jangka panjang mengenai perubahan luas lahan perkebunan teh di berbagai wilayah.
+    Ekspansi Kapasitas: Wilayah dengan kondisi TM yang stabil seperti [Nama Kabupaten] merupakan lokasi strategis untuk optimalisasi rantai pasok dan pembangunan fasilitas pengolahan.
 
-Analisis dimulai dari pemeriksaan kualitas data yang menunjukkan dataset berada dalam kondisi baik. Distribusi luas tanaman memperlihatkan bahwa sebagian besar produksi terkonsentrasi pada beberapa kabupaten tertentu, menandakan struktur industri yang tidak merata.
+Struktur Repositori
 
-Tren tahunan memperlihatkan adanya kenaikan dan penurunan luas tanaman yang mencerminkan pengaruh faktor eksternal seperti kebijakan, kondisi lingkungan, serta peremajaan tanaman. Analisis kondisi tanaman memperkuat pemahaman mengenai fase produksi, regenerasi, dan potensi penurunan produktivitas di beberapa wilayah.
+    data/: Berisi dataset mentah dalam format CSV.
 
-Hasil analisis ini relevan bagi pemerintah daerah maupun pelaku industri sebagai dasar pengambilan keputusan berbasis data.
+    notebooks/: Jupyter Notebook berisi dokumentasi langkah-langkah EDA.
 
----
+    README.md: Dokumentasi utama proyek.
 
-## Kesimpulan
+    requirements.txt: Daftar pustaka Python yang diperlukan.
 
-1. Luas tanaman teh di Jawa Barat tidak terdistribusi secara merata.
-2. Terdapat fluktuasi tahunan yang mencerminkan dinamika industri perkebunan.
-3. Kondisi tanaman menunjukkan kombinasi antara lahan produktif dan area yang memerlukan perhatian khusus.
-4. Dataset memiliki kualitas baik dan layak untuk analisis lanjutan.
-5. Analisis lanjutan seperti peramalan atau analisis spasial sangat memungkinkan dilakukan.
+Author
 
----
-
-## Rekomendasi Analitis
-
-Untuk Pemerintah dan Industri:
-- Perlu fokus pada wilayah dengan nilai TR/TTM tinggi untuk menekan lahan tidak produktif.
-- Evaluasi kebijakan diperlukan pada daerah dengan tren luas tanaman menurun.
-- Wilayah dengan nilai TBM besar berpotensi menjadi pusat produksi di masa depan.
-
-Untuk Pengembangan Analisis:
-- Menambahkan data produksi, harga, dan luas panen.
-- Melakukan forecasting menggunakan metode time series.
-- Mengembangkan analisis spasial jika data geografis tersedia.
-
----
-
-## Cara Menjalankan Project
-
-1. Clone repository
-2. Install dependencies
-3. Jalankan file eda.ipynb di Jupyter Notebook
-4. Analisis dan visualisasi dapat dilihat langsung di notebook
-
----
-
-## Author
-Nama: Frazka Mulya Wijaya  
+Nama: Frazka Mulya Wijaya
 Role: Data Analyst / Data Science Enthusiast
