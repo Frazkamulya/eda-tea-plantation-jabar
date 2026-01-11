@@ -1,3 +1,5 @@
+# Exploratory Data Analysis: Revitalisasi Perkebunan Teh Jawa Barat (2013–2024)
+
 Tentu, Frazka. Ini adalah versi README yang lebih formal, bersih, dan profesional tanpa menggunakan ikon atau emoji. Format ini sangat cocok jika Anda ingin menonjolkan kesan teknis dan serius di GitHub.
 
 Pastikan Anda mengisi bagian di dalam kurung siku [...] dengan data riil dari notebook Anda.
